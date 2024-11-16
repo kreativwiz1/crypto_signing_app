@@ -1,0 +1,20 @@
+{
+  "name": "crypto-signing-verification-app",
+  "version": "1.0.0",
+  "description": "A crypto signing and verification app with content moderation capabilities",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"python -m http.server 8000\" \"node server.js\""
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "cryptico": "^1.0.2",
+    "crypto-js": "^4.2.0",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2",
+    "concurrently": "^8.2.2"
+  }
+}

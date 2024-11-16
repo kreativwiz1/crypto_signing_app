@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Signing and Verification App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/cryptico.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Signing and Verification App</h1>
+
+        <div class="wallet-section">
+            <button id="connect-wallet">Connect Wallet</button>
+            <span id="wallet-status">Not connected</span>
+        </div>
+
+        <div class="network-section">
+            <label for="network-select">Select Network:</label>
+            <select id="network-select">
+                <option value="11155111">Sepolia Testnet</option>
+                <option value="137">Polygon Mainnet</option>
+            </select>
+        </div>
+
+        <div class="signing-section">
+            <h2>Sign Request</h2>
+            <textarea id="sign-input" placeholder="Enter message to sign"></textarea>
+            <div class="image-upload-section">
+                <h3>Upload Image</h3>
+                <input type="file" id="image-upload" accept="image/*">
+                <div id="image-preview"></div>
+                <div id="upload-progress" class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <p id="upload-status"></p>
+            </div>
+            <button id="sign-button">Sign</button>
+            <pre id="sign-output"></pre>
+        </div>
+
+        <div class="verification-section">
+            <h2>Verify Request</h2>
+            <textarea id="verify-input" placeholder="Enter signed request to verify"></textarea>
+            <button id="verify-button">Verify</button>
+            <pre id="verify-output"></pre>
+        </div>
+    </div>
+
+    <script src="js/DDEABI.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
