@@ -129,16 +129,25 @@ const rsaKey = cryptico.generateRSAKey(seed, bits);
 ## 📁 Project Structure
 
 ```
-crypto-signing-app/
-├── index.html          # Main application interface
-├── css/
-│   └── styles.css      # Application styling
+file-analyzer/
 ├── js/
-│   ├── web3.min.js     # Web3 library
-│   ├── crypto.js       # Cryptographic operations
-│   └── app.js          # Main application logic
-├── img/                # Application images
-└── README.md          # Documentation
+│   ├── config.js         # Configuration settings
+│   ├── DDEABI.js        # Contract ABI (modular)
+│   └── script.js        # Main application logic
+├── css/
+│   └── styles.css       # Main stylesheet
+├── lib/
+│   ├── bignumber.min.js # BigNumber library
+│   ├── cryptico.min.js  # Cryptographic operations
+│   ├── crypto-sha256.js # SHA-256 implementation
+│   ├── purify.js        # DOMPurify for XSS protection
+│   └── web3.min.js      # Web3 library
+├── server/
+│   ├── server.js        # Node.js server
+│   ├── server.log       # Server logs
+│   └── pythonserver.bat # Python server script
+├── index.html           # Main entry point
+└── generated-icon.png   # Project icon
 ```
 
 ## ⚙️ Configuration
