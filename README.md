@@ -51,7 +51,7 @@ A web-based application that enables secure cryptographic signing and verificati
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/kreativwiz/crypto-signing-app.git
+git clone https://github.com/kreativwiz1/crypto-signing-app.git
 cd crypto-signing-app
 ```
 
